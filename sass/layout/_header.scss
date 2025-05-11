@@ -1,0 +1,33 @@
+header{
+    padding-top: 16px;
+    margin-bottom: 38px;
+    @include breakpoint(tablet){
+        padding-top: 24px;
+        margin-bottom: 90px;
+    }
+    @include breakpoint(tablethorizontal){
+        padding-top: 30px;
+        margin-bottom: 90px;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        img{
+            width: 90px;
+            @include breakpoint(desktop){
+                width: 111px;
+            }
+        }
+        .btn{
+            margin-left: auto;
+            margin-right: 5px;
+            @include button();
+            @include breakpoint(desktop){
+                font-size: 18px;
+            }
+            &:hover{
+                background-color:#666CA3;
+            }
+        }
+    }
+}

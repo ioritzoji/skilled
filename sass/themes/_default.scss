@@ -1,0 +1,15 @@
+html * {
+    font-family: $main-font;
+    box-sizing: border-box;
+}
+ 
+body {
+    overflow-x: hidden;
+    margin: 0;
+    font-weight: 500;
+    margin-inline: auto;
+} 
+
+img {
+    max-width: 100%;
+}
